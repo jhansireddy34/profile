@@ -1,0 +1,8 @@
+@import "../profilecard/profilecard.css";
+
+
+.profile-appbar {
+    
+    margin:1vw;
+    background-color: rgb(76, 80, 80);
+}

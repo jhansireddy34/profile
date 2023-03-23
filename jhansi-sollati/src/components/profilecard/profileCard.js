@@ -10,6 +10,9 @@ return (
     <>
     
     <Card  className = "profilecard">
+        <CardHeader>
+            <img src={props.imageUrl}></img>
+        </CardHeader>
         
         <CardContent className = "profileText">
             <h1>{props.name}</h1>

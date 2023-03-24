@@ -1,6 +1,6 @@
 import {AppBar,Toolbar, IconButton} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import ProfileCard from "../profilecard/profileCard";
+
 
 
 const ProfileAppBar = (props)=>{
@@ -9,7 +9,7 @@ const ProfileAppBar = (props)=>{
         <>
         <AppBar position="static"color='secondary'className="profile-appbar">
             <Toolbar >
-                <IconButton>
+                <IconButton className="appBar-menuIcon">
 
                     <MenuIcon/>
                 </IconButton>

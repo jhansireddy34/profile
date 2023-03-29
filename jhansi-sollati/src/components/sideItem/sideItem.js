@@ -5,15 +5,13 @@ import ListItemText from '@mui/material/ListItemText';
 
 
 export default function SideItem(props){
-   console.log(props.item);
+   
 
    return (
     <>
-    <ListItem>
+    <ListItem className='sideItem'>
         <ListItemButton onClick = {props.item.handleClick}>
-        <ListItemIcon>
-                {props.item.icon}
-              </ListItemIcon>
+        
               <ListItemText primary={props.item.label} />
 
         </ListItemButton>

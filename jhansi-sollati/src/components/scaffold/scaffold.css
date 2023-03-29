@@ -1,3 +1,31 @@
-.sidedrawer {
+
+.MuiDrawer-paper{
+background-color: rgba(7, 6, 6, 0.316)
+}
+.MuiDrawer-root {
+    background-color: rgba(150, 147, 147, 0);
+}
+.jslogo {
+color:rgba(233, 48, 6, 0.936);
+font-size: 3rem;
+margin: 20;
+display: flex;
+justify-content: center;
+text-shadow: -5px 0px 0px rgba(8, 155, 96, 0.936);
+}
+.jsname {
+    display: flex;
+justify-content: center;
+color:rgba(244, 244, 244, 0.936)
     
+}
+.logoBg {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.sideItem {
+    color:rgba(100, 97, 97, 0.936)
 }

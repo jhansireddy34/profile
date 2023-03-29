@@ -1,22 +1,28 @@
 import {AppBar,Toolbar, IconButton} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import {motion } from "framer-motion";
+
 
 
 const ProfileAppBar = (props)=>{
+        console.log(props.width);
 
     return (
         <>
         <AppBar position="static"color='secondary'className="profile-appbar">
             <Toolbar >
-                <IconButton className="appBar-menuIcon">
+                <IconButton className="appBar-menuIcon" onClick={props.handleMenuClick}>
 
                     <MenuIcon/>
+
                 </IconButton>
 
-
-
+             {props.appBarLogo && (<motion.h3
+                                    animate={{x: props.width-100}}>JS</motion.h3>)}
+               
             </Toolbar>
+            
 
         </AppBar>
     

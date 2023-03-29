@@ -10,9 +10,7 @@ const Profile = (props)=>{
         
         
         <Grid container spacing={2}>
-        <Grid xs={12} item={true}>
-        <ProfileAppBar />
-        </Grid>
+      
 
         <Grid xs={12}item={true}>
         <Grid container spacing={2}>

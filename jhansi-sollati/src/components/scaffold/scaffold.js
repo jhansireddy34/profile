@@ -15,18 +15,15 @@ const sideMenu = [{"label": "About","icon": <MailIcon/>,"handleClick": ()=>{} },
 {"label": "Skills","icon": <MailIcon/>,"handleClick": ()=>{} },
 {"label": "Projects","icon": <MailIcon/>,"handleClick": ()=>{} }];
 export default function Scaffold() {
-  const [drawerWidth,setDrawerWidth]=React.useState(240);
   const [variant,setVariant]=React.useState("permanent")
-
   const [drawer,setDrawer]=React.useState(true);
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+  const matches = useMediaQuery('(min-width:600px)');
   var [anchor,setAnchor]=React.useState("left");
   React.useEffect(()=> {
     console.log(matches);
     if (!matches){
     setDrawer(()=>false);
-    setDrawerWidth(()=>window.innerWidth);
     setAnchor(()=>"bottom");
     setVariant(()=>"temporary");
     
@@ -34,7 +31,6 @@ export default function Scaffold() {
     }
     else{
       setDrawer(()=>true);
-      setDrawerWidth(()=>240);
       setVariant(()=>"permanent");
       setAnchor(()=>"left");
       
@@ -53,18 +49,13 @@ export default function Scaffold() {
 
   return (
     <div>
-      <ProfileAppBar handleMenuClick={handleMenuClick} appBarLogo = {!matches} width={drawerWidth}/>
+      <ProfileAppBar handleMenuClick={handleMenuClick} appBarLogo = {!matches} />
           <Drawer
             variant={variant}
             anchor={anchor}
             open={drawer}
             onClose={handleMenuClick}
-            on
-            sx={{
-              
-              '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-            }}
-            
+            overflow= {"auto"}
           >
             <JSlogo />
             <Box height={30}></Box>

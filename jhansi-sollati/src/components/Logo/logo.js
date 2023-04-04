@@ -6,11 +6,13 @@ import {Grid} from '@mui/material';
 const JSlogo =(props)=> {
 
     return <Grid className="logoBg">
-        <Grid xs={12} item={true} className="jslogo"><h1 
+        <Grid xs={12} item={true} className="jslogo"><motion.h1
+        animate={{rotateY: 360}}
+        transition={{duration: 1.5}}
         
         >
             JS
-        </h1>
+        </motion.h1>
         </Grid><Grid xs={12}className="jsname">
         <h4>Jhansi</h4>
 

@@ -13,6 +13,7 @@ display: flex;
 justify-content: center;
 text-shadow: -5px 0px 0px rgba(8, 155, 96, 0.936);
 }
+
 .jsname {
     display: flex;
 justify-content: center;
@@ -28,4 +29,35 @@ color:rgba(244, 244, 244, 0.936)
 
 .sideItem {
     color:rgba(100, 97, 97, 0.936)
+}
+
+@media (max-width: 600px) {
+    .MuiDrawer-paper {
+ width: 100% !important;
+
+ }
+ .appBar-menuIcon{
+    color:rgba(244, 244, 244, 0.936);
+ }
+ .appBarLogo{
+    color:rgba(233, 48, 6, 0.936);
+font-size: 1.5rem;
+margin: 20;
+display: flex;
+justify-content: center;
+text-shadow: -2px 0px 0px rgba(8, 155, 96, 0.936);
+ }
+ .jslogo {
+    
+    display: none;
+    
+    }
+
+
+}
+
+
+.profile-appbar {
+    display: flex;
+    align-items:flex-end;
 }

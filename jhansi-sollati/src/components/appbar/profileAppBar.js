@@ -18,8 +18,8 @@ const ProfileAppBar = (props)=>{
 
                 </IconButton>
 
-             {props.appBarLogo && (<motion.h3
-                                    animate={{x: props.width-100}}>JS</motion.h3>)}
+             {props.appBarLogo && (<motion.h3 className="appBarLogo"
+                                    animate={{scale: 1.25}}>JS</motion.h3>)}
                
             </Toolbar>
             
@@ -27,6 +27,7 @@ const ProfileAppBar = (props)=>{
         </AppBar>
     
         </>
+        
     )
 }
 

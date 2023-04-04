@@ -6,7 +6,7 @@ import {motion } from "framer-motion";
 
 
 const ProfileAppBar = (props)=>{
-        console.log(props.width);
+       
 
     return (
         <>

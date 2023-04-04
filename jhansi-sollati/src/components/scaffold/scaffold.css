@@ -1,11 +1,13 @@
 
 .MuiDrawer-paper{
-background-color: rgba(7, 6, 6, 0.316)
+background-color: rgba(7, 6, 6, 0.316);
+width: 15vw;
 }
 .MuiDrawer-root {
     background-color: rgba(150, 147, 147, 0);
 }
 .jslogo {
+   
 color:rgba(233, 48, 6, 0.936);
 font-size: 3rem;
 margin: 20;
@@ -16,6 +18,7 @@ text-shadow: -5px 0px 0px rgba(8, 155, 96, 0.936);
 
 .jsname {
     display: flex;
+    font-family:'Courier New', Courier, monospace;
 justify-content: center;
 color:rgba(244, 244, 244, 0.936)
     
@@ -28,7 +31,11 @@ color:rgba(244, 244, 244, 0.936)
 }
 
 .sideItem {
-    color:rgba(100, 97, 97, 0.936)
+    color:rgba(100, 97, 97, 0.936);
+    
+}
+.sideItemText {
+    font-family:'Courier New', Courier, monospace;
 }
 
 @media (max-width: 600px) {
@@ -60,4 +67,21 @@ text-shadow: -2px 0px 0px rgba(8, 155, 96, 0.936);
 .profile-appbar {
     display: flex;
     align-items:flex-end;
+    background-color: rgba(43, 37, 37, 0.317);
+    
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    padding: 5vw;
+    font-size:smaller;
+    margin: 15vw;
+}
+.welcome {
+    
+    margin-bottom: 5px;
+    font-size: 2rem;
 }

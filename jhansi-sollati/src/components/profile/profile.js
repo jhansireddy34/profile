@@ -1,30 +1,45 @@
 import {AppBar,Toolbar,Grid} from "@mui/material";
 import ProfileCard from "../profilecard/profileCard";
-import ProfileAppBar from "../appbar/profileAppBar";
+import {useState,useEffect} from 'react';
+
 
 
 const Profile = (props)=>{
+  const [text, setText] = useState("")
+  const [fullText, setFullText] = useState(props.text)
+  const [index, setIndex] = useState(0)
+   
+
+  useEffect(() => {
+    if (index < fullText.length) {
+      setTimeout(() => {
+        setText(text + fullText[index])
+        setIndex(index + 1)
+      }, 50)
+     
+    }
+   
+  }, [index])
 
     return (
         <>
         
         
-        <Grid container spacing={2}>
+        <Grid container spacing={2}className={"profile"}>
       
 
-        <Grid xs={12}item={true}>
-        <Grid container spacing={2}>
+        
    
-        <Grid xs={12} item={true}>
-        <ProfileCard name="Jhansi Sollati"desc="Aspiring Developer/Business Analyst"notes="React/Flutter/Python" />
+        <Grid xs={8} item={true}>
+          <h3 className="welcome"> Welcome!</h3>
+        <h3>{text}</h3>
         </Grid>
         </Grid>
-          </Grid >
+         
 
 
 
 
-        </Grid>
         </>
     )
 }

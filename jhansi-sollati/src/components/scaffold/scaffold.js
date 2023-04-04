@@ -8,8 +8,12 @@ import SideList from '../sideList/sideList';
 import {motion} from 'framer-motion';
 import JSlogo from '../Logo/logo';
 import { Box } from '@mui/material';
+import Profile from '../profile/profile';
 //import Profile from '../profile/profile';
 
+const about = "Welcome to my profile! I'm a highly motivated React, Python, and Flutter Developer with a passion for creating cutting-edge applications that drive real-world results. As a self-taught developer, I've honed my skills through hands-on experience and a strong dedication to continuous learning. Whether you're looking to develop a game-changing web app or a robust mobile platform, I have the expertise and drive to help you bring your vision to life. Let's work together to build the next generation of money-making applications!"
+
+const intro = "Hi,there.., Jhansi here"
 
 const sideMenu = [{"label": "About","icon": <MailIcon/>,"handleClick": ()=>{} },
 {"label": "Skills","icon": <MailIcon/>,"handleClick": ()=>{} },
@@ -55,14 +59,15 @@ export default function Scaffold() {
             anchor={anchor}
             open={drawer}
             onClose={handleMenuClick}
-            overflow= {"auto"}
+            
           >
             <JSlogo />
             <Box height={30}></Box>
             <SideList menuList={sideMenu} />
             
           </Drawer> 
-          
+          <Profile text={intro} />
+         
     
  
     </div>

@@ -12,7 +12,7 @@ export default function SideItem(props){
     <ListItem className='sideItem'>
         <ListItemButton onClick = {props.item.handleClick}>
         
-              <ListItemText primary={props.item.label} />
+              <ListItemText className='sideItemText' primary={props.item.label} />
 
         </ListItemButton>
 

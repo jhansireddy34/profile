@@ -8,12 +8,12 @@ width: 15vw;
 }
 .jslogo {
    
-color:rgba(233, 48, 6, 0.936);
+color:rgba(149, 105, 95, 0.936);
 font-size: 3rem;
 margin: 20;
 display: flex;
 justify-content: center;
-text-shadow: -5px 0px 0px rgba(8, 155, 96, 0.936);
+text-shadow: -5px 0px 0px rgba(252, 253, 253, 0.936);
 }
 
 .jsname {
@@ -47,18 +47,19 @@ color:rgba(244, 244, 244, 0.936)
     color:rgba(244, 244, 244, 0.936);
  }
  .appBarLogo{
-    color:rgba(233, 48, 6, 0.936);
+    color:rgba(210, 173, 165, 0.936);
 font-size: 1.5rem;
 margin: 20;
 display: flex;
 justify-content: center;
-text-shadow: -2px 0px 0px rgba(8, 155, 96, 0.936);
+text-shadow: -2px 0px 0px rgba(10, 10, 10, 0.936);
  }
  .jslogo {
     
     display: none;
     
     }
+  
 
 
 }
@@ -67,21 +68,42 @@ text-shadow: -2px 0px 0px rgba(8, 155, 96, 0.936);
 .profile-appbar {
     display: flex;
     align-items:flex-end;
-    background-color: rgba(43, 37, 37, 0.317);
+    background-color: rgba(43, 37, 37, 0.971);
     
 }
 
 .profile {
     display: flex;
-    align-items: center;
+    
     color:aliceblue;
     font-family:'Courier New', Courier, monospace;
     padding: 5vw;
+    padding-top: 10vw;
+    
     font-size:smaller;
-    margin: 15vw;
+    margin-left: 15vw;
+   
+    height: 200vh;
+    
+    
+    
+    
 }
 .welcome {
     
     margin-bottom: 5px;
     font-size: 2rem;
+}
+.profileBox {
+    height: 100vw;
+    background-image: url('/images/profile_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-blend-mode: darken;
+    background-position-y: 10vh;
+    background-color: rgba(33, 29, 29, 0.525);
+    
+    
+    
 }

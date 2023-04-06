@@ -1,6 +1,7 @@
-import {AppBar,Toolbar,Grid} from "@mui/material";
+import {AppBar,Toolbar,Grid, Box} from "@mui/material";
 import ProfileCard from "../profilecard/profileCard";
 import {useState,useEffect} from 'react';
+import { motion } from "framer-motion";
 
 
 
@@ -31,16 +32,20 @@ const Profile = (props)=>{
         
    
         <Grid xs={8} item={true}>
-          <h3 className="welcome"> Welcome!</h3>
+          <h3 sx={{zIndex: 1000}} className="welcome"> Welcome!</h3>
         <h3>{text}</h3>
+        
         </Grid>
         </Grid>
+
+        
+       </>
          
 
 
+      
 
-
-        </>
+        
     )
 }
 

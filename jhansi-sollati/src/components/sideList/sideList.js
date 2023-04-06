@@ -10,7 +10,7 @@ export default function SideList(props) {
   <List>
     {props.menuList.map((item,index) => (
         <Divider>
-        <SideItem item={item} />
+        <SideItem item={item}/>
         </Divider>
       
     ))}

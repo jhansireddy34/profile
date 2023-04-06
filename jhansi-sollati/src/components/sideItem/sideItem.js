@@ -11,8 +11,9 @@ export default function SideItem(props){
     <>
     <ListItem className='sideItem'>
         <ListItemButton onClick = {props.item.handleClick}>
-        
+              <a href={props.item.href}>
               <ListItemText className='sideItemText' primary={props.item.label} />
+              </a>
 
         </ListItemButton>
 

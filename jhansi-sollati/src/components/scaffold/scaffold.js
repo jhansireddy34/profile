@@ -13,10 +13,10 @@ import Profile from '../profile/profile';
 
 const about = "Welcome to my profile! I'm a highly motivated React, Python, and Flutter Developer with a passion for creating cutting-edge applications that drive real-world results. As a self-taught developer, I've honed my skills through hands-on experience and a strong dedication to continuous learning. Whether you're looking to develop a game-changing web app or a robust mobile platform, I have the expertise and drive to help you bring your vision to life. Let's work together to build the next generation of money-making applications!"
 
-const intro = "Hi,there.., Jhansi here"
+const intro = "Hi,there.. Jhansi here"
 
-const sideMenu = [{"label": "About","icon": <MailIcon/>,"handleClick": ()=>{} },
-{"label": "Skills","icon": <MailIcon/>,"handleClick": ()=>{} },
+const sideMenu = [{"label": "About","href": "#about","icon": <MailIcon/>,"handleClick": ()=>{} },
+{"label": "Skills","href": "#skills","icon": <MailIcon/>,"handleClick": ()=>{} },
 {"label": "Projects","icon": <MailIcon/>,"handleClick": ()=>{} }];
 export default function Scaffold() {
   const [variant,setVariant]=React.useState("permanent")
@@ -53,6 +53,8 @@ export default function Scaffold() {
 
   return (
     <div>
+      <Box className="profileBox">
+       
       <ProfileAppBar handleMenuClick={handleMenuClick} appBarLogo = {!matches} />
           <Drawer
             variant={variant}
@@ -66,10 +68,12 @@ export default function Scaffold() {
             <SideList menuList={sideMenu} />
             
           </Drawer> 
-          <Profile text={intro} />
+          
+          <Profile id='profile'text={intro} />
+          <Profile id='about'text={about} />
          
     
- 
+          </Box>
     </div>
   );
 }
